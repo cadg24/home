@@ -6,72 +6,121 @@
 <meta name="viewport" content="width=device-width">
 <title>CADG dataset</title>
 <link rel="stylesheet" media="all" href="css/style.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
 <script src="js/script.js"></script>
 </head>
 
 <body id="top">
-<header id="header">
-	<div id="headerWrap">
-		<!--<h1><img src="images/title.png" width="142" height="80" alt="logo"></h1>-->
-		<h1><img src="images/title.png" alt="logo"></h1>
-        <nav id="mainnav">
-			<p id="menuWrap"><a id="menu"><span id="menuBtn"></span></a></p>
-			<div class="panel">
-				<ul>
-					<!-- <li><a href="#top">TOP</a></li> -->
-					<li><a href="#sec01">OVERVIEW</a></li>
-					<li><a href="#sec02">EXAMPLES</a></li>
-					<li><a href="#sec03">DOWNLOAD</a></li>
-					<!-- <li><a href="#sec04">CONTACT</a></li> -->
-				</ul>
+<div id="wrapper">
+
+		<header id="header">
+		<div id="headerWrap">
+			
+			<!-- HEADER-->
+			<!-- <h1><img src="images/title_v2.png" alt="logo"></h1> -->
+			<img class="headerimg" src="images/title_v2.png" alt="headerimage">
+
+			<!-- NAV-->
+			<nav id="mainnav">
+				<p id="menuWrap"><a id="menu"><span id="menuBtn"></span></a></p>
+				<div class="panel">
+					<ul>
+						<li><a href="#sec01">NEWS</a></li>
+						<li><a href="#sec02">OVERVIEW</a></li>
+						<li><a href="#sec03">SAMPLES</a></li>
+						<li><a href="#sec04">DOWNLOAD</a></li>
+					</ul>
+				</div>
+			</nav>
+			
+		</div>
+	</header>
+
+
+	<div class="container">
+
+		<!-- NEWS-->
+		<section id="sec01" class="section_background_color">
+			<header>
+				<h2 class="heading"><span>NEWS</span></h2>
+			</header>
+			<div class="innerS">
+				- 2023.11: <b>The project page opened!</b> The download links for the dataset and code are in preparation.
 			</div>
-		</nav>
+		</section>
+		<!-- // NEWS -->
+
+
+		<!-- OVERVIEW -->
+		<section id="sec02" class="section_background_color">
+			<header>
+				<h3 class="heading"><span>OVERVIEW</span></h3>
+			</header>
+			<div class="innerS">
+				<strong>The CADG dataset</strong> <b>is a new dataset for <i><u>C</u>rowd <u>A</u>nomaly detection from <u>D</u>rone and <u>G</u>round views</b></i>.
+				The dataset provides a sophisticated simulation of how people would behave during an incident or accident in a public space, 
+				allowing the evaluation of various crowd activity detection methods under the real-world conditions.
+				The dataset is not only the largest and most comprehensive dataset currently available for crowd activity detection, 
+				but also provides video from both the drone and fixed cameras.
+				<br><br>
+				We organized into normal activities and four key crowd anomaly activities, assuming surveillance under a real-world public space, 
+				i.e., (i) <i>fight</i>, (ii) <i>theft</i>, (iii) <i>illness</i>, and (iv) <i>running</i>, as shown in the following examples.
+				All videos were filmed in a sports hall with up to 12 actors.
+				The normal activities include a wide variety of daily activities such as random walking, standing, texting while walking, and talking with several people.
+				In the crowd anomaly activities, a few randomly selected people play particularly important roles, such as emergency patients or robbers.
+				The rest of the actors intervene in the event by, for example, walking around while paying attention, stopping to observe the event, or talking to the patients or victims.
+			</div>
+		</section>
+
+		<div id="headerimg">
+			<img src="images/statistics.jpg" alt="">
+		</div>
+		<!-- // OVERVIEW -->
+
+
+		<!-- SAMPLES -->
+		<section id="sec03" class="section_background_color">
+			<header>
+				<h2 class="heading"><span>SAMPLES</span></h2>
+			</header>
+
+			
+			<!-- <div class="innerS">
+				<b>- Sample 1: </b>
+			</div> -->
+			<div class="video_container">
+				<video src="images/samples_1.mp4" autoplay muted playsinline preload loop poster></video>
+			</div>
+
+
+			<!-- <div class="innerS">
+				<b>- Sample 2: </b>
+			</div> -->
+			<div class="video_container">
+				<video src="images/samples_2.mp4" autoplay muted playsinline preload loop poster></video>
+			</div>
+
+
+			<div class="innerS">
+				* The videos shown above have been trimmed from the original clips.
+			</div>
+		</section>
+		<!-- // EXAMPLES -->
+
+
+		<!-- DOWNLOAD -->
+		<section id="sec04" class="section_background_color">
+			<header>
+				<h3 class="heading"><span>DOWNLOAD</span></h3>
+			</header>
+			<div class="innerS">
+				<p> <b>In preparation.</b> The download links for the CADG dataset and the code for anomaly detection will be available here!
+			</div>
+		</section>
+		<!-- // DOWNLOAD -->
+
 	</div>
-</header>
 
-<!-- 
-<div id="mainImg">
-	<img src="images/title.jpg" alt="">
+
 </div>
- -->
-
-<!-- OVERVIEW -->
-<section id="sec01">
-	<header>
-		<h2><span>OVERVIEW</span></h2>
-	</header>
-	<div class="innerS">
-        In Preparation ... 
-    </div>
-</section>
-<!-- // OVERVIEW -->
-
-
-<!-- EXAMPLES -->
-<section id="sec02">
-	<header>
-		<h2><span>EXAMPLES</span></h2>
-	</header>
-	<ul id="mainImg">
-		<img src="images/bgSec04.jpg" alt="">
-	</ul>
-</section>
-<!-- // EXAMPLES -->
-
-
-<!-- DOWNLOAD -->
-<section id="sec03">
-	<header>
-		<h2><span>DOWNLOAD</span></h2>
-	</header>
-	<div class="innerS">
-		<p> In Preparation ...
-    </div>
-</section>
-<!-- // DOWNLOAD -->
-
-
-
 </body>
 </html>
